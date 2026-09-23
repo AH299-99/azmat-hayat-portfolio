@@ -7,6 +7,9 @@ import {
   Code2,
   ExternalLink,
   Github,
+  Linkedin,
+  Mail,
+  MessageCircle,
   Layers3,
   LockKeyhole,
   Menu,
@@ -91,13 +94,14 @@ export default function Home() {
   return (
     <div className="site-shell">
       <header className="site-nav" data-testid="site-nav">
-        <a className="brand-mark" href="#top" onClick={() => scrollToId("top")} aria-label="AH299-99 home">
+        <a className="brand-mark" href="#top" onClick={() => scrollToId("top")} aria-label="Azmat Hayat home">
           <span className="brand-dot" />
-          <span>AH299-99</span>
+          <span>Azmat Hayat</span>
         </a>
         <nav className={menuOpen ? "nav-links is-open" : "nav-links"} aria-label="Main navigation">
           <button onClick={() => navigate("work")}>Selected work</button>
           <button onClick={() => navigate("services")}>Services</button>
+          <button onClick={() => navigate("about")}>About</button>
           <button onClick={() => navigate("approach")}>Approach</button>
           <button className="nav-contact" onClick={() => navigate("contact")}>Let&apos;s talk <ArrowUpRight size={15} /></button>
         </nav>
@@ -153,6 +157,12 @@ export default function Home() {
           <div className="service-grid">{services.map((service) => <article className="service-card" key={service.title}><div className="service-icon">{service.icon}</div><h3>{service.title}</h3><p>{service.body}</p><span className="service-index">0{services.indexOf(service) + 1}</span></article>)}</div>
         </section>
 
+        <section className="about-section" id="about">
+          <div className="about-label"><div className="eyebrow"><span className="eyebrow-line" /> ABOUT AZMAT</div></div>
+          <div className="about-copy"><h2>A developer who cares about the <em>details.</em></h2><p>I build practical software for people who want to turn a clear idea into something useful. My path into software has crossed a Diploma in Information Technology, a Master’s degree in English Literature, and a BS in Bioinformatics—an unusual mix that taught me to think in systems, communicate clearly, and notice the details that make software easier to use and trust. That perspective now shapes how I translate messy requirements into clean, well-documented web, mobile, AI, and automation products.</p></div>
+          <div className="about-links"><a href="mailto:azmathayat646@gmail.com"><Mail size={17} /> azmathayat646@gmail.com <ArrowUpRight size={14} /></a><a href="https://www.linkedin.com/in/azmat-hayat-b8070b175" target="_blank" rel="noreferrer"><Linkedin size={17} /> LinkedIn profile <ArrowUpRight size={14} /></a></div>
+        </section>
+
         <section className="principles-section" id="approach">
           <div className="principles-intro"><div className="eyebrow"><span className="eyebrow-line" /> THE APPROACH</div><h2>Good work feels<br /><em>thought through.</em></h2><p>I work best with people who value direct communication, thoughtful decisions, and software that remains understandable after launch day.</p></div>
           <div className="principles-list">{principles.map(([number, title, body]) => <div className="principle" key={number}><span>{number}</span><div><h3>{title}</h3><p>{body}</p></div><ChevronRight size={18} /></div>)}</div>
@@ -164,11 +174,11 @@ export default function Home() {
           <div className="contact-kicker">HAVE A PROJECT IN MIND?</div>
           <h2>Let&apos;s make it<br /><em>real.</em></h2>
           <p>Tell me what you&apos;re trying to build, fix, or improve. I&apos;ll help you find the clearest next step.</p>
-          <div className="contact-actions"><a className="button button-primary" href="https://github.com/AH299-99" target="_blank" rel="noreferrer">Message me on GitHub <ArrowUpRight size={17} /></a><a className="button button-outline" href="https://github.com/AH299-99/AH299-99" target="_blank" rel="noreferrer">View profile <Github size={17} /></a></div>
+          <div className="contact-actions"><a className="button button-primary" href="mailto:azmathayat646@gmail.com">Email me <Mail size={17} /></a><a className="button button-outline" href="https://www.linkedin.com/in/azmat-hayat-b8070b175" target="_blank" rel="noreferrer">Connect on LinkedIn <Linkedin size={17} /></a><a className="button button-outline whatsapp-button" href="https://wa.me/923024212240" target="_blank" rel="noreferrer">Message me on WhatsApp <MessageCircle size={17} /></a><a className="button button-quiet" href="https://github.com/AH299-99" target="_blank" rel="noreferrer">View GitHub <Github size={17} /></a></div>
         </section>
       </main>
 
-      <footer className="site-footer"><span>© 2026 AH299-99</span><span>Built with intention.</span><a href="#top" onClick={() => scrollToId("top")}>Back to top <ArrowUpRight size={14} /></a></footer>
+      <footer className="site-footer"><span>© 2026 Azmat Hayat</span><span>Built with intention.</span><a href="#top" onClick={() => scrollToId("top")}>Back to top <ArrowUpRight size={14} /></a></footer>
     </div>
   );
 }
