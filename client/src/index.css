@@ -45,7 +45,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--lime); outline-
 .nav-links .nav-contact:hover { background: var(--paper); color: var(--ink); }
 .menu-toggle { background: transparent; border: 0; display: none; }
 
-.hero-section { background-image: linear-gradient(90deg, rgba(10,11,13,.98) 0%, rgba(10,11,13,.9) 38%, rgba(10,11,13,.48) 100%), url('/manus-storage/portfolio-hero_cabbcd16.png'); background-position: center, center right; background-size: cover, cover; display: grid; grid-template-columns: minmax(0, 1.03fr) minmax(340px, .97fr); min-height: 760px; padding: 160px 5.5vw 76px; position: relative; }
+.hero-section { background-image: linear-gradient(90deg, rgba(10,11,13,.98) 0%, rgba(10,11,13,.9) 38%, rgba(10,11,13,.55) 100%); background-position: center; background-size: cover; display: grid; grid-template-columns: minmax(0, 1.03fr) minmax(340px, .97fr); min-height: 760px; padding: 160px 5.5vw 76px; position: relative; }
 .hero-section::before { background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 72px 72px; content: ''; inset: 0; mask-image: linear-gradient(90deg, black, transparent 82%); opacity: .4; pointer-events: none; position: absolute; }
 .hero-copy { align-self: center; max-width: 715px; position: relative; z-index: 2; }
 .eyebrow, .contact-kicker { align-items: center; color: var(--lime); display: flex; font-family: 'DM Mono', monospace; font-size: 10px; gap: 11px; letter-spacing: .14em; line-height: 1.4; }
@@ -65,7 +65,7 @@ h1 em, h2 em { color: var(--cobalt); font-family: 'Playfair Display', serif; fon
 .button-outline:hover { background: var(--paper); color: var(--ink); }
 .hero-proof { align-items: center; color: #6f7582; display: flex; font-family: 'DM Mono', monospace; font-size: 10px; gap: 9px; margin-top: 72px; text-transform: uppercase; }
 .proof-mark { align-items: center; background: var(--cobalt); border-radius: 50%; color: var(--paper); display: inline-flex; height: 19px; justify-content: center; width: 19px; }
-.hero-art { align-self: center; background: linear-gradient(135deg, rgba(10,11,13,.18), rgba(10,11,13,.52)), url('/manus-storage/portfolio-hero_cabbcd16.png') center / cover; border-radius: 2px; box-shadow: 0 28px 80px rgba(0,0,0,.24); height: 500px; justify-self: end; max-width: 580px; overflow: hidden; position: relative; width: 100%; }
+.hero-art { align-self: center; background: linear-gradient(135deg, rgba(10,11,13,.18), rgba(10,11,13,.52)); border-radius: 2px; box-shadow: 0 28px 80px rgba(0,0,0,.24); height: 500px; justify-self: end; max-width: 580px; overflow: hidden; position: relative; width: 100%; }
 .art-grid { background-image: linear-gradient(rgba(255,255,255,.075) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.075) 1px, transparent 1px); background-size: 42px 42px; inset: 6% 0 4% 8%; mask-image: radial-gradient(circle, black 10%, transparent 71%); opacity: .7; position: absolute; transform: perspective(600px) rotateY(-14deg) rotateX(7deg); }
 .art-ring { border: 1px solid rgba(77,99,255,.55); border-radius: 50%; position: absolute; }
 .ring-one { height: 68%; left: 22%; top: 13%; transform: rotate(32deg) skew(-10deg); width: 68%; }
