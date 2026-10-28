@@ -49,6 +49,7 @@ const projects = [
     tags: ["Python", "Flask", "SQLite", "SQLAlchemy", "Bootstrap", "Plotly"],
     accent: "lime",
     links: [
+      ["Live demo", "https://shiny-chicken-care.loca.lt"],
       ["Repository", "https://github.com/AH299-99/Food_Ordering_app"],
       ["Security hardening PR", "https://github.com/AH299-99/Food_Ordering_app/pull/1"],
     ],
